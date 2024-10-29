@@ -14,7 +14,7 @@ export default function TestePagina(){
         >
             <button 
                 onClick={executar}
-                className='bg-blue-500 p-2 rounded-md'
+                className='botao'
             >
                     Teste
             </button>
