@@ -1,4 +1,4 @@
-import { Icon360View, IconBraces, IconBrandJavascript, IconCalculator, IconCode, IconFileCheck, IconForms, IconFunction, IconH1, IconHome, IconNumbers, IconSitemap } from "@tabler/icons-react";
+import { Icon360View, IconArrowBackUp, IconArrowDownSquare, IconArrowUpSquare, IconBraces, IconBrandJavascript, IconCalculator, IconCode, IconFileCheck, IconForms, IconFunction, IconH1, IconHome, IconNumbers, IconSitemap } from "@tabler/icons-react";
 import MenuItem from "./MenuItem";
 
 export default function Menu(){
@@ -7,6 +7,18 @@ export default function Menu(){
             flex flex-col justify-start w-72
             text-3xl p-2 gap-2
         `}>
+
+            <span className="text-sm text-zinc-500 pl-3 pt-4">Comunicação</span>
+            <MenuItem 
+                icone={<IconArrowDownSquare />} 
+                texto="Comunicação Direta" 
+                url="/comunicacao/direta" 
+            />
+            <MenuItem 
+                icone={<IconArrowUpSquare />} 
+                texto="Comunicação Indireta" 
+                url="/comunicacao/indireta" 
+            />
 
             <span className="text-sm text-zinc-500 pl-3 pt-4">Estado</span>
             <MenuItem 
